@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai';
 
 
@@ -14,7 +14,18 @@ const Navbar = () => {
         setNav(!nav)
     }
 
-    
+    useEffect(() => {
+          const changeColor = () => {
+            if(window.scrollY >= 90){
+                setColor('#ffffff')
+                setTextColor('#000000')
+            }else{
+                setColor('transparent')
+                setTextColor("#ffffff")
+            }
+          }
+          window.addEventListener('scroll',changeColor)
+    },[])
   return (
     <div
      style={{backgroundColor:`${color}`}}
