@@ -9,7 +9,13 @@ const Slider = ({slides}) => {
                <div>
                   {SliderData.map((slide,index) => {
                     return (
-                        <Image  key={index} src={slide.image} alt="/" width='1440' height='600'objectFit='cover'/>
+                        <Image 
+                         style={{objectFit:'cover'}} 
+                          key={index} src={slide.image} 
+                          alt="/slide"
+                           width='1440'
+                            height='600'
+                          />
                     )
                   })}
                </div>
