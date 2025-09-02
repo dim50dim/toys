@@ -21,8 +21,8 @@ const Navbar = () => {
     className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
         <div className='max-w-[1240px] m-auto flex justify-between items-center text-white p-4'>
             <Link href='/'/>
-             <h1 className='font-bold text-4xl'>Knitting Toys</h1>
-             <ul className='sm:flex hidden'>
+             <h1 style={{color:`${textColor}`}} className='font-bold text-4xl'>Knitting Toys</h1>
+             <ul style={{color:`${textColor}`}} className='sm:flex hidden'>
                 <li className='p-4 '>
                     <Link href='/'> Home</Link> 
                 </li>
@@ -38,8 +38,8 @@ const Navbar = () => {
              </ul>
 
                      {/* MOBILE BUTTON  */}
-  <div className='block sm:hidden z-10'>
-     { nav  ?   <AiOutlineClose size={20} /> :   <AiOutlineMenu size={20} />}
+  <div onClick={handleNav} className='block sm:hidden z-10'>
+     { nav  ?   <AiOutlineClose size={20} style={{color:`${textColor}`}}/> :   <AiOutlineMenu size={20} style={{color:`${textColor}`}}/>}
   </div>
 
                {/* mobile menu  */}
