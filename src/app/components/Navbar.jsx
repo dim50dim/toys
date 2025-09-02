@@ -1,3 +1,5 @@
+"use client"
+
 import Link from 'next/link'
 import React, { useState } from 'react'
 import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai';
@@ -35,7 +37,11 @@ const Navbar = () => {
   </div>
 
                {/* mobile menu  */}
-               <div className='sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'>
+               <div className={nav ?
+                'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+                :
+                'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+            }>
                         <ul>
                 <li className='text-4xl hover:text-gray-500 p-3'>
                     <Link href='/'> Home</Link> 
