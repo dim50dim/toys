@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import InstagramImg from './InstagramImg';
-import IdImag1 from '../images/slider/p_2.jpg'
+import IdImag1 from "../../app/../../public/images/slider/p_2.jpg"
 const Instagram = () => {
   return (
     <div>
