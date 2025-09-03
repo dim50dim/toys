@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import React from 'react'
 
-const InstagramImg = () => {
+const InstagramImg = ({socialImg} ) => {
   return (
     <div>
-      
+          <Image src={socialImg}/>
     </div>
   )
 }
