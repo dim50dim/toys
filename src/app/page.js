@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import Hero from "./components/Hero";
 import Slider from "./components/Slider";
 import { SliderData } from "./components/SliderData";
@@ -9,6 +10,7 @@ export default function Home() {
        <Hero heading='Knitting Toys' message="I passionate to do peculiar toys alive"/> 
        <Slider slides={SliderData}/>
        <Instagram/>
+    
      </>
   );
 }
