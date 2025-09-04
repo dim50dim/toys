@@ -6,7 +6,7 @@ const nextConfig = {
     unoptimized: true, // required for next export
    
   },
-//   basePath: '/<repo-name>', // only if using GitHub Pages under a repo
+  basePath: '/toys/', // only if using GitHub Pages under a repo
 };
 
 export default nextConfig;
