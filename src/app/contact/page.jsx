@@ -1,9 +1,10 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
-const contact = () => {
+const contact = ({heading,message}) => {
   return (
     <div>
-      <h1>contact</h1>
+       <Hero heading="This is my contacts" message="Get in touch" />
     </div>
   )
 }
