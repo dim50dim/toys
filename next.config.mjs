@@ -1,14 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  
-  output: 'export',
-  images: {
-    unoptimized: true, // required for next export
-   
-  },
-  basePath: '/toys/', // only if using GitHub Pages under a repo
+  output: "export",               // required for static export
+  images: { unoptimized: true },  // GH Pages can’t do Next.js image optimizations
+  basePath: "/toys",              // 👈 your repo name
+  assetPrefix: "/toys/",          // 👈 your repo name
 };
 
-export default nextConfig;
-  
 
+export default nextConfig;
